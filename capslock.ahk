@@ -14,9 +14,16 @@ l::Right
 u::Home
 o::End
 
+h::PgUp
+`;::PgDn
+
 ; Change Desktops
 q::^#Left
 w::^#Right
+
+; Change Tabs
+a::^PgUp
+s::^PgDn
 
 ; Actually Turn on Caplock If Needed
 /::CapsLock
