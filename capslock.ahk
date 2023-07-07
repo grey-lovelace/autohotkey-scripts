@@ -1,33 +1,29 @@
-SetCapsLockState, AlwaysOff
+#Requires AutoHotkey v2.0
 
-#If GetKeyState("CapsLock", "P")
+SetCapsLockState "AlwaysOff"
 
 ; Left Hand Shortcuts
-r::BackSpace
+CapsLock & r::BackSpace
 
 ; General Navigation
-j::Left
-k::Down
-i::Up
-l::Right
+CapsLock & j::Left
+CapsLock & k::Down
+CapsLock & i::Up
+CapsLock & l::Right
 
-u::Home
-o::End
+CapsLock & u::Home
+CapsLock & o::End
 
-h::PgUp
-`;::PgDn
+CapsLock & h::PgUp
+CapsLock & `;::PgDn
 
 ; Change Desktops
-q::^#Left
-w::^#Right
+CapsLock & q::^#Left
+CapsLock & w::^#Right
 
 ; Change Tabs
-a::^PgUp
-s::^PgDn
+CapsLock & a::^PgUp
+CapsLock & s::^PgDn
 
 ; Actually Turn on Caplock If Needed
-/::CapsLock
-
-#If
-
-CapsLock::return
+CapsLock & /::CapsLock
